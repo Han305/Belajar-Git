@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1 style="text-align:center;">Daftar Tamu</h1>
+    <table>
+        <tr>
+            <td>Nama</td>
+            <td>Email</td>
+        </tr>
+        <tr th:each="p : ${daftarTamu}">
+            <td th:text="${p.nama}">rayhan300506@gmail.com</td>
+            <td th:text="${p.email}">2006-05-30</td>
+        </tr>
+    </table>
+</body>
+</html>
